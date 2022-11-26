@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Business Webpage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/header-title.css" rel="stylesheet">
+    <link href="css/header-weather_ticker.css" rel="stylesheet">
+    <link href="css/header-navbar.css" rel="stylesheet">
+    <link href="css/main-who_we_are.css" rel="stylesheet">
+    <link href="css/main-services.css" rel="stylesheet">
+    <link href="css/main-portfolio.css" rel="stylesheet">
+    <link href="css/main-location.css" rel="stylesheet">
+    <link href="css/main-email_us.css" rel="stylesheet">
+    <link href="css/main-quizz_game.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title" tabindex="0">My Business Webpage</h1>
+        <div id="weather-ticker-wrap">
+            <div class="ticker">
+                <!-- In here, ticker items inserted dynamically -->
+            </div>
+            <img id="close-button" src="img/close_box_red.png" alt="X" aria-label="close ticker button">
+        </div>
+        <nav id="navigation_bar" class="navbar navbar-expand-sm navbar-dark" data-controller="kn"
+            data-action="keyup@document->kn#follow">
+            <div class="container-fluid">
+                <span class="navbar-brand"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#who_we_are" data-kn-target="link">Who We
+                                are?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" data-kn-target="link">Our Services</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" data-kn-target="link">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#location" data-kn-target="link">Location</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#email_us" data-kn-target="link">Email Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="who_we_are" aria-label="Who we are" tabindex="0">
+            <h2>Who we are?</h2>
+            <div class="container subtitle" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas dictum venenatis dui, eget lobortis dolor.</div>
+            <div class="row container-fluid">
+                <div class="col col-12 col-md-6 col-lg-6">
+                    <article tabindex="0">
+                        <h3>Lorem ipsum</h3>
+                        <img class="float_left" src="img/1.jpg"
+                            alt="fireworks background and an amazon doll made of cardboxes taking off while attached to fireworks">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et mattis lectus. Donec
+                        aliquam et tellus sed commodo. Phasellus eu augue eu justo sodales luctus ac sed risus. Ut eget
+                        laoreet purus, et gravida tellus. Quisque sit amet malesuada orci. Maecenas ullamcorper lobortis
+                        sollicitudin. Maecenas fermentum dolor ut felis feugiat, at luctus leo tincidunt. Sed ut lectus
+                        aliquam, volutpat eros vitae, feugiat lorem. Sed ac velit tempor, suscipit massa vitae, congue
+                        lacus. Praesent id lorem ipsum. Fusce fermentum posuere commodo. In vitae lorem neque.
+
+                        Ut magna turpis, placerat id mi ut, placerat porttitor velit. Cras interdum tortor in felis
+                        hendrerit hendrerit. Aenean at bibendum lorem. Sed mollis ipsum in turpis euismod ornare.
+                        Vivamus euismod, tortor dictum pellentesque rutrum, mi justo luctus nisi, at fringilla magna
+                        odio sodales odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit
+                        turpis vitae elit interdum laoreet. In fermentum orci et ante venenatis porta. Nulla scelerisque
+                        lectus tellus, vel vestibulum quam feugiat vel.
+                    </article>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-6">
+                    <article tabindex="0">
+                        <h3>Lorem ipsum</h3>
+                        <img class="float_right" src="img/ad.jpg" alt="Amazon advertise" width="200">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum venenatis dui, eget
+                        lobortis dolor. Quisque vestibulum velit quam, sit amet gravida arcu viverra et. Vestibulum ante
+                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed et tempor nibh.
+                        Mauris in facilisis enim, ut tristique leo. Praesent est dui, molestie et massa ut, feugiat
+                        dignissim felis.
+                    </article>
+                    <article tabindex="0">
+                        <h3>Lorem ipsum</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum venenatis dui, eget
+                        lobortis dolor. Quisque vestibulum velit quam, sit amet gravida arcu viverra et. Vestibulum ante
+                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed et tempor nibh.
+                        Mauris in facilisis enim, ut tristique leo. Praesent est dui, molestie et massa ut, feugiat
+                        dignissim felis.
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" aria-label="Services" tabindex="0">
+            <div class="container-fluid">
+                <h2>Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/cloud-solid.svg" alt="cloud icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 1</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/code-solid.svg" alt="code icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 2</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/rss-solid.svg" alt="wifi icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 3</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/earth-americas-solid.svg" alt="world icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 4</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/flag-solid.svg" alt="flag icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 5</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="elemento1">
+                            <img class="iconoservice" src="img/gear-solid.svg" alt="configuration icon">
+                        </div>
+                        <div class="elemento2" tabindex="0">
+                            <h3>Service 6</h3>
+                            <p class="service">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum
+                                venenatis dui, eget lobortis dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" aria-label="Portfolio" tabindex="0">
+            <div id="portfolio_content">
+                <h2>Portfolio</h2>
+                <div class="container subtitle" tabindex="0">There are success projects created by us </div>
+                <div id=portfolio_grid class="container">
+                    <div class="row form-group">
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/2.jpg"
+                                alt="Rain project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/3.jpg"
+                                alt="Coffee project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/4.jpg"
+                                alt="Candles project"></div>
+
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/5.jpg"
+                                alt="WC project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=spin src="img/6.jpg"
+                                alt="Bench project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/7.jpg"
+                                alt="Walnut project"></div>
+
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/8.jpg"
+                                alt="Box project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/9.jpg"
+                                alt="Cookies project"></div>
+                        <div class="col-12 col-sm-6 col-lg-4" tabindex="0"><img class=rotation src="img/10.jpg"
+                                alt="Soap project"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" aria-label="Location" tabindex="0">
+            <h2>Location</h2>
+            <p class="container subtitle" tabindex="0">You can find us</p>
+            <div class="container-fluid">
+                <div id="location_content" class="row">
+                    <div id="mapa" class="col-md-4">
+                        <iframe title="map with the company location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.1051708615696!2d2.129517129239619!3d41.40838579870392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816d2174de3%3A0xdf19845b9ce0e77d!2sCarrer%20de%20Sant%20Joan%20de%20la%20Salle%2C%2042%2C%2008022%20Barcelona!5e0!3m2!1sen!2ses!4v1652460352819!5m2!1sen!2ses"
+                            width="400" height="400" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" tabindex="-1">
+                        </iframe>
+                    </div>
+                    <div id="info" class="col-md-4">
+                        <div class="parrafo_info" tabindex="0">
+                            <h3 class="strong">Head Office</h3>
+                            <p class="italic">
+                                12356 Blank Street<br>
+                                Phone: <a href="tel:2456134321">2456-134-321</a><br>
+                                Email Address: <a href="mailto:info@domain.edu">info@domain</a>
+                            </p>
+                        </div>
+
+                        <div class="parrafo_info" tabindex="0">
+                            <h3 class="strong">Emea</h3>
+                            <p class="italic">
+                                Carrer de Sant Joan de la Salle, 42<br>
+                                08022 Barcelona<br>
+                                Phone: <a href="tel:932902474">932 90 24 74</a><br>
+                                Email Address: <a href="mailto:info@salleurl.edu">info@salleurl.edu</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="email_us" aria-label="email us" tabindex="0">
+            <div class="backgroundmapa">
+                <h2 id="h2form">Email Us</h2>
+                <form action="/info" method="post">
+                    <div class="container">
+                        <div class="row form-group">
+                            <div class="col-12 offset-sm-2 col-sm-2"><label for="name">Name*:</label></div>
+                            <div class="col-12 col-sm-6"><input type="text" class="form-control" name="name" id="name"
+                                    aria-label="Your name" required></div>
+
+                            <div class="col-12 offset-sm-2 col-sm-2"><label for="email">Email*:</label></div>
+                            <div class="col-12 col-sm-6"><input type="email" class="form-control" name="email"
+                                    id="email" aria-label="email" required>
+                            </div>
+
+                            <div class="col-12 offset-sm-2 col-sm-2"><label for="phone">Phone:</label></div>
+                            <div class="col-12 col-sm-6">
+                                <input type="tel" name="phone" id="phone"
+                                    pattern="([0-9]{4}-[0-9]{3}-[0-9]{3})|([0-9]{3}\s*[0-9]{2}\s*[0-9]{2}\s*[0-9]{2})"
+                                    aria-label="phone">
+                                <small>Format: 1234-567-890, 123 45 67 89 or 123456789</small>
+                            </div>
+
+                            <div class="col-12 offset-sm-2 col-sm-2"><label for="subject">Subject*:</label></div>
+                            <div class="col-12 col-sm-6"><input type="text" class="form-control" name="subject"
+                                    id="subject" aria-label="subject" required>
+                            </div>
+
+                            <div class="col-12 offset-sm-2 col-sm-2"><label for="message">Message*:</label></div>
+                            <div class="col-12 col-sm-6"><textarea name="message" class="form-control" id="message"
+                                    aria-label="message" required rows="4" cols="50"></textarea>
+                            </div>
+
+                            <div class="col-12 offset-sm-2 col-sm-8 centered"><input class="form_send_button"
+                                    type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="easteregg">
+            <h2>The famous Country Quizz game!!!</h2>
+            <p id="question" tabindex="0"></p>
+            <div class="wrapper">
+                <button id="answer1" class="btn" type="button" tabindex="0"></button>
+                <button id="answer2" class="btn" type="button" tabindex="0"></button>
+                <button id="answer3" class="btn" type="button" tabindex="0"></button>
+                <button id="answer4" class="btn" type="button" tabindex="0"></button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        &copy; 2022 - <a href="https://www.salleurl.edu" target="_blank">La Salle</a>. All Rights Reserved.
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js" type="module"></script>
+</body>

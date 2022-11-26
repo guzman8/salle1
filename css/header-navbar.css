@@ -1,0 +1,34 @@
+/* Navigation bar */
+
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0.4em;
+    background-color: #61458c;
+}
+
+.nav-link {
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-align: center;
+    margin: 0em 1em 0em 1em;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #61458c;
+}

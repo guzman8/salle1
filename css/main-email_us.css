@@ -1,0 +1,45 @@
+/* Email us section */
+
+#email_us .backgroundmapa {
+    padding: 2em;
+    color: white;
+    background-image: url("../img/map-image.png");
+    background-blend-mode: normal;
+    background-color: #79629e;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#email_us .box1form {
+    color: white;
+    width: 100%;
+}
+
+#email_us input {
+    left: 500px;
+    border-radius: 5px;
+    border-width: 0;
+    height: 25px;
+    width: 100%;
+}
+
+#email_us .form_send_button {
+    margin-top: 10px;
+    width: 100px;
+}
+
+#email_us textarea {
+    left: 500px;
+    height: 75px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#email_us #h2form {
+    color: white;
+}
+
+#email_us label {
+    margin: 5px;
+    text-align: right;
+}

@@ -1,0 +1,23 @@
+/* Who we are section */
+
+#who_we_are {
+    padding: 2em 2em 0.5em 2em;
+}
+
+@media only screen and (min-width: 768px) {
+    #who_we_are .col:nth-child(odd) {
+        border-right: 1px solid #d3d3d3;
+    }
+}
+
+#who_we_are .float_left {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#who_we_are .float_right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

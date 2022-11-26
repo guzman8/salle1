@@ -1,0 +1,42 @@
+/* Services section */
+
+#services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#services .elemento1 {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px rgba(223, 216, 216, 0.719) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease-out;
+}
+
+#services .elemento1:hover {
+    background-color: #61458c;
+}
+
+#services .elemento1:hover .iconoservice {
+    filter: invert(100%);
+}
+
+#services .iconoservice {
+    width: 40px;
+    height: 40px;
+    /* Filter value for color #61458c, obtained from: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(28%) sepia(61%) saturate(511%) hue-rotate(222deg) brightness(97%) contrast(94%);
+}
+
+#services .elemento2 {
+    float: right;
+    width: 65%;
+}
+
+#services .service {
+    font-size: smaller;
+}

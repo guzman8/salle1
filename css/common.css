@@ -1,0 +1,67 @@
+/* Common CSS */
+
+html, body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: "Open Sans", sans-serif;
+    color: #4F4F4F
+}
+
+section:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+    color: #454545
+}
+
+section h2 {
+    margin: 0 0 1em 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+section h3 {
+    margin: 0.5em 0 0.5em 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+article {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.subtitle {
+    text-align: center;
+    width: 75%;
+}
+
+.row {
+    margin: 1.5em 0 0.5em 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.div_highlighted {
+    border: 3px solid yellow;
+}

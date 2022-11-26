@@ -1,0 +1,105 @@
+/* Weather Ticker (taken from https://codepen.io/lewismcarey/pen/GJZVoG and adapted) */
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100% 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+#weather-ticker-wrap {
+    overflow: hidden;
+    height: 2.5rem;
+    background-color: #454545;
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+
+#weather-ticker-wrap .ticker {
+    display: none; /* Hidden until its data is loaded, avoiding undesired visual side effects. Then: inline-block */
+    height: 2.5rem;
+    line-height: 2.3rem;
+    white-space: nowrap;
+    /* It can't be 100% because we can't use 'width: 100%' in the parent element, as the ticker's author intended.
+       So in here we use the width of the webpage as the maximum empty space on the right side of the messages... (see below) */
+    padding-right: 1024px;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    /* Set a default/minimum value here. JS modifies it depending on data. */
+    -webkit-animation-duration: 10s; 
+    animation-duration: 10s;
+}
+
+@media only screen and (max-width: 1024px) {
+    #weather-ticker-wrap .ticker {
+        padding-right: 100vw;   /* ... or the 100% of the current viewport width */
+    }
+}
+
+#weather-ticker-wrap #close-button {
+    position: relative;
+    float: right;
+    top: -2.5em;
+    z-index: 100;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#weather-ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #f2f2f2;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+}
+
+#weather-ticker-wrap .ticker__item img {
+    border: none;
+    width: 50px;
+    height: 30px;
+}
+
+#weather-ticker-wrap .weather-city {
+    color: yellow;
+    font-size: larger;
+}
+
+#weather-ticker-wrap .weather-timestamp {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: larger;
+    padding-right: 10px;
+}
+
+#weather-ticker-wrap .weather-value {
+    color: yellow;
+    padding-right: 1rem;
+}
+
+#weather-ticker-wrap :is(#current-weather, #forecast-weather) {
+    padding: 0 2rem;
+}

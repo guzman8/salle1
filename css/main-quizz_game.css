@@ -1,0 +1,89 @@
+/* Country Quizz Game section */
+
+#easteregg:target {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#easteregg {
+    display: none;
+    padding: 2em 2em 1em 2em;
+}
+
+#easteregg .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 2em;
+}
+
+#easteregg #question {
+    font-size: x-large;
+}
+
+#easteregg .country {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #61458c;
+}
+
+#easteregg .flag {
+    font-size: 500%;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+#easteregg :is(#answer1, #answer2, #answer3, #answer4) {
+    background-color: rgb(197, 197, 197);
+    border-radius: 20px;
+    border: 0px;
+    margin: 10px 30px;
+    font-size: xx-large;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#easteregg :is(#answer1, #answer3) {
+    grid-column: 1;
+}
+
+#easteregg :is(#answer2, #answer4) {
+    grid-column: 2;
+}
+
+#easteregg :is(#answer1, #answer2) {
+    grid-row: 1;
+}
+
+#easteregg :is(#answer3, #answer4) {
+    grid-row: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    #easteregg .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #easteregg :is(#answer1, #answer2, #answer3, #answer4) {
+        grid-column: 1;
+    }
+
+    #easteregg #answer1 {
+        grid-row: 1;
+    }
+
+    #easteregg #answer2 {
+        grid-row: 2;
+    }
+
+    #easteregg #answer3 {
+        grid-row: 3;
+    }
+
+    #easteregg #answer4 {
+        grid-row: 4;
+    }
+}

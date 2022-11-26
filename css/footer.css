@@ -1,0 +1,14 @@
+/* Footer of the website */
+
+#footer {
+    text-align: right;
+    display: block;
+    color: white;
+    background-color: #61458c;
+    padding: 12px;
+}
+
+#footer a {
+    text-decoration: underline; /* Removes anchor decorations except the underline */
+    color: inherit;
+}
